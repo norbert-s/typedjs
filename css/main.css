@@ -1,0 +1,115 @@
+.preloader-overlay
+{
+    background:url('./images/eyeblink.gif')center no-repeat #FFFEFF;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    position: fixed;
+}
+.row 
+{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+canvas#spiders 
+{
+  height:100vh;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  background:url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-551727.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;  
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  min-height: 665px;
+  letter-spacing: 2px;
+  font-family: "Overlock", Helvetica ,sans-serif;
+  padding-bottom: 1px;
+}
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+.hero h1 span {
+  font-size: 25px;
+  color: #e8f380;
+  padding-bottom: 12px;
+  line-height: 1.5;
+}
+
+.intro-text 
+{
+  padding: 3% 2%;
+  margin: 7em auto;
+  width: 340px;
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 300px;
+  outline: 4px double black;
+  outline-offset: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* typed js style */
+#typed
+{
+  color: #fcf8e3;
+  font-family: 'Overlock', 'Century Gothic', sans-serif;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: none;
+}
+
+@keyframes blink
+  {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+  }
+        @-webkit-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+/* code for animated blinking cursor */
+#typed-cursor
+{
+      opacity: 1;
+      font-size: 35px;
+      color: #fff;
+      font-weight: 50;
+      -webkit-animation: blink 1s infinite;
+      -moz-animation: blink 1s infinite;
+      -ms-animation: blink 1s infinite;
+      -o-animation: blink 1s infinite;
+      animation: blink 1s infinite;
+}
